@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <head>
+    <title>TM_FILENAME_BASE</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+      <p>Click the button to know your location</p>
+      <input type="button" onclick="location" value="Try">
+    <p id="demo"></p>     
+
+<script>
+         
+var x = document.getElementById("demo");
+function location() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+              
+  </body>
+</html>

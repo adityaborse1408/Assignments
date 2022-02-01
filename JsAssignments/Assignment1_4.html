@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Embedding Script tag in HTML Document</title>
+ <script>
+ /* define variable headParam and initialize it to some integer value and 
+display
+ the value as shown in the figure 4. */ 
+ var x = 100;
+
+ </script>
+ <hr>
+</head>
+<body>
+ <script>
+ /*define variable bodyParam and initialize it to some integer value and 
+display 
+ the value as shown in the figure 4 */
+ var y = 50;
+ </script>
+ <hr>
+ <script src="common.js">
+</script>
+<p>The script is located in external script file called math.js</p>
+<p id="a1"></p>
+<script>
+   
+    document.getElementById("a1").innerHTML = `<div>Addition is :</div> `+addNumbers(100,50);
+</script>
+ <hr>
+
+</body>
+</html>

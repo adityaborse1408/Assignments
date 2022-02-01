@@ -1,0 +1,24 @@
+<!-- Implement the Selector API to color the Para which is inside the div tag by adding a button 
+to the web page named as COLOR -->
+
+<!DOCTYPE html>
+  <head>
+    <title>TM_FILENAME_BASE</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+      <div id="color" onclick="color()">
+          <p>Welcome to solution of Assignment 2 By Aditya</p>
+          <input type="color" id="changecolor" value="Click here">
+      </div>
+        <script>
+            function color(){
+                 document.getElementById("color").style.backgroundColor = document.getElementById("changecolor").value
+            }
+           
+</script>
+  </body>
+</html>

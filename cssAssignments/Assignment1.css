@@ -1,0 +1,14 @@
+table{
+    border: width 3px solid;
+}
+tr:nth-child(odd) {
+  background-color: chartreuse;
+  border : width 2px;
+   
+}
+table, th, td {
+  border: 1px solid black;
+}
+th{
+    background-color: brown;
+}

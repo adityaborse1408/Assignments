@@ -1,0 +1,21 @@
+
+ul {
+    overflow: hidden;
+    list-style-type: none;
+}
+li {
+    /* display: inline; */
+    float: left;
+    color: white;
+    display: block;
+     background-color: green;
+     text-align: center;
+}
+li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+         background-color: green;
+
+    }
